@@ -1,0 +1,46 @@
+{
+  "name": "modernizr-useragents",
+  "description": "Modernizr tests for user agents",
+  "version": "1.0.0",
+  "author": "Philipp Daun <post@philippdaun.net> (https://philippdaun.net)",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/modernizr-useragents.js",
+  "module": "dist/modernizr-useragents.es.js",
+  "esmodule": "dist/modernizr-useragents.modern.js",
+  "unpkg": "dist/modernizr-useragents.umd.js",
+  "scripts": {
+    "lint": "eslint src",
+    "clean": "rimraf dist",
+    "bundle": "microbundle",
+    "build": "npm run clean && npm run bundle",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philippdaun/modernizr-useragents"
+  },
+  "keywords": [
+    "javascript",
+    "modernizr",
+    "useragent"
+  ],
+  "bugs": {
+    "url": "https://github.com/philippdaun/modernizr-useragents/issues"
+  },
+  "homepage": "https://github.com/philippdaun/modernizr-useragents",
+  "devDependencies": {
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "esm": "^3.2.25",
+    "microbundle": "^0.12.1",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2"
+  }
+}
