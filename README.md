@@ -4,6 +4,12 @@ Add simple user-agent checks as Modernizr tests.
 
 > :warning: The checks in this package are meant for light-weight corrections to browser engines' rendering quirks. They are too simple and unreliable for critical feature checks.
 
+## Installation
+
+```bash
+npm install modernizr-useragents
+```
+
 ## Usage
 
 ### Add specific tests
